@@ -1,0 +1,17 @@
+[profile.default]
+src = 'src'
+libs = ['lib']
+fs_permissions = [{ access = 'read-write', path = '/'}]
+
+remappings = [
+    "forge-std=lib/forge-std/src",
+    "forge-ctf=lib/forge-ctf/src",
+]
+
+[rpc_endpoints]
+sepolia = "https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID"
+
+[etherscan]
+sepolia = { key = "YOUR_ETHERSCAN_API_KEY" }
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
